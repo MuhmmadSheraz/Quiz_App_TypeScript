@@ -39,7 +39,7 @@
   font-size: 22px;
 }
 .Hello {
-  background-color: transparent;
+  background-color: black;
   border: 1px solid white;
   font-size: 18px;
 }
@@ -63,7 +63,7 @@
   font-size: 22px;
 }
 .isClicked {
-  background-color: white;
+  background-color: red;
   color: black;
   cursor: pointer;
 }

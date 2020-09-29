@@ -16,6 +16,11 @@ export type FilteredQuestions = {
 export type propsQuestion = {
     question: string
     options: string[]
-    correct_answer: string
+    current_Score: number
     callBack: (correct_answer: string) => void;
+    currentIteration: number
+}
+export type resultScore = {
+    score: number
+    totalQuestion: number
 }
