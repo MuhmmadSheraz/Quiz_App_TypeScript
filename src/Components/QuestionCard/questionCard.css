@@ -62,8 +62,13 @@
   border: none !important;
   font-size: 22px;
 }
+.isClicked {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
 
-@media(max-width:576px){
+@media (max-width: 576px) {
   .question {
     font-size: 35px;
   }
@@ -83,7 +88,7 @@
     width: 500px;
   }
 }
-@media(max-width:530px){
+@media (max-width: 530px) {
   .question {
     font-size: 30px;
   }
@@ -103,7 +108,7 @@
     width: 400px;
   }
 }
-@media(max-width:425px){
+@media (max-width: 425px) {
   .question {
     font-size: 25px;
   }
@@ -123,7 +128,7 @@
     width: 300px;
   }
 }
-@media(max-width:320px){
+@media (max-width: 320px) {
   .question {
     font-size: 25px;
   }
