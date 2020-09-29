@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 function App() {
   let [iteration, setIterations] = useState(0)
   let [allQuestions, setAllQuestions] = useState<FilteredQuestions[]>([])
-  const totalQuestions: number = 3;
+  const totalQuestions: number = 5;
   let [score, setScore] = useState<number>(0)
   let [showResult, setShowResult] = useState<Boolean>(false)
   const [startQuiz, setStartQuiz] = useState<Boolean>(false)
@@ -33,14 +33,14 @@ function App() {
       }))
     }
     const correctAnswer = allQuestions[iteration].correct_answer;
-    if (userAnswer == correctAnswer) {
+    if (userAnswer === correctAnswer) {
       setScore(++score)
       setIterations(++iteration)
     }
     if (userAnswer !== correctAnswer) {
       setIterations(++iteration)
     }
-    if (iteration == allQuestions.length) {
+    if (iteration === allQuestions.length) {
       setShowResult(true)
     }
 

@@ -21,15 +21,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
-  width: 500px;
+width:500px;
+  
 }
 .questionStats {
   display: flex;
   justify-content: space-between;
 }
-.question {
-  font-size: 40px;
+.question1 {
+  font-size: 30px;
 }
 .score {
   font-weight: bold;
@@ -69,27 +69,7 @@
 }
 
 @media (max-width: 576px) {
-  .question {
-    font-size: 35px;
-  }
-  .questionContent {
-    color: white;
-    background: rgb(255, 184, 126);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 184, 126, 1) 0%,
-      rgba(253, 148, 142, 1) 100%
-    );
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 600px;
-    width: 500px;
-  }
-}
-@media (max-width: 530px) {
-  .question {
+  .question1 {
     font-size: 30px;
   }
   .questionContent {
@@ -104,12 +84,31 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 650px;
     width: 400px;
+    
+  }
+}
+@media (max-width: 530px) {
+  .question1 {
+    font-size: 25px;
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
   }
 }
 @media (max-width: 425px) {
-  .question {
+  .question1 {
     font-size: 25px;
   }
   .questionContent {
@@ -124,12 +123,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 300px;
+    width:350px;
+
   }
 }
-@media (max-width: 320px) {
-  .question {
+@media (max-width: 380px) {
+  
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+  
+  }
+}
+@media (max-width: 310px) {
+  .question1 {
     font-size: 25px;
   }
   .questionContent {
@@ -144,7 +161,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
     width: 250px;
+  
   }
 }
