@@ -63,7 +63,7 @@
   font-size: 22px;
 }
 .isClicked {
-  background-color: red;
+  background-color: white;
   color: black;
   cursor: pointer;
 }

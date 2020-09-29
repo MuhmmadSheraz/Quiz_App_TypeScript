@@ -10,8 +10,10 @@ export const QuestionCard: React.FC<propsQuestion> = ({ question, options, curre
   // export const changeIndex = () => setIsClicked(99)
   const [isClicked, setIsClicked] = useState<number>()
   const [userAnswer, setUserAnswer] = useState<string>("")
-
-
+  const stateChanged = () => {
+    setIsClicked(100)
+  }
+  
   // Logic Here
 
   const selectedAnswer = (x: string, index: number, e: any) => {
@@ -20,6 +22,10 @@ export const QuestionCard: React.FC<propsQuestion> = ({ question, options, curre
     console.log(userAnswer, "User Answer")
 
     console.log("Option Clicked ! )", x)
+  }
+  const mainFunction = () => {
+    callBack(userAnswer)
+    stateChanged()
   }
 
   return (
@@ -43,7 +49,7 @@ export const QuestionCard: React.FC<propsQuestion> = ({ question, options, curre
             })}
 
           </Row>
-          <button className="btn-block nextBtn" onClick={() => callBack(userAnswer)}>Next</button>
+          <button className="btn-block nextBtn" onClick={() => mainFunction()}>Next</button>
         </Container>
       </div>
     </div >
