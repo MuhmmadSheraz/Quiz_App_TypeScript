@@ -6,7 +6,7 @@ export const ResultCard: React.FC<resultScore> = ({ score, totalQuestion }) => {
   const [startQuiz, setStartQuiz] = useState<Boolean>(false)
   if (startQuiz) return <App />
   return (
-    <div className="questionCard_Wrapper">
+    <div className="resultCardWrapper">
       <div className="resultContent text-center">
         <div className="p-4">
           <span className=" helloText text-center p-3">

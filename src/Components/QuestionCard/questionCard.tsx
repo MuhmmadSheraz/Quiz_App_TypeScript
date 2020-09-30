@@ -31,20 +31,22 @@ export const QuestionCard: React.FC<propsQuestion> = ({ question, options, curre
           <p className="font-weight-bold">Easy</p>
           <p>{currentIteration + 1}/5</p>
         </div>
-        <p className="text-center question1 p-3">{question}</p>
+        <p className="text-center question1 px-3" dangerouslySetInnerHTML={{ __html: question }} />
         <p className="text-center score">Score : <span>{current_Score}</span> PTS</p>
         <Container>
           <Row className="m-3">
             {options.map((x, index) => {
-              return <Col sm="6" key={index}>
-                <p className={isClicked === index ? `isClicked rounded p-3 ` : `Hello rounded p-3`} onClick={(e) => selectedAnswer(x, index, e)} >
-                  {x}
-                </p>
+              return <Col sm="6" key={index} className="pb-1">
+                <p dangerouslySetInnerHTML={{ __html: x }}
+                  className={isClicked === index ? `isClicked rounded  ` : `Hello rounded `} onClick={(e) => selectedAnswer(x, index, e)} />
+
               </Col>
             })}
 
           </Row>
-          <button className="btn-block nextBtn mb-3" onClick={() => mainFunction()}>Next</button>
+          <p className="py-3">
+            <button className="btn-block nextBtn" onClick={() => mainFunction()}>Next</button>
+          </p>
         </Container>
       </div>
     </div >
